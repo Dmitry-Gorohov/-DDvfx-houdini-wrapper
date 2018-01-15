@@ -1,0 +1,39 @@
+import os, hou
+
+path_data = os.environ['PRJ'] 
+hou.hscript('set -g "%s"="%s"' % ('PRJ', path_data.replace('\\','/')))
+
+path_data = os.environ['SHOT'] 
+hou.hscript('set -g "%s"="%s"' % ('SHOT', path_data.replace('\\','/')))
+
+path_data = os.environ['LIB'] 
+hou.hscript('set -g "%s"="%s"' % ('LIB', path_data.replace('\\','/')))
+
+path_data = os.environ['ANIMATION'] 
+hou.hscript('set -g "%s"="%s"' % ('ANIMATION', path_data.replace('\\','/')))
+
+path_data = os.environ['ASSETS'] 
+hou.hscript('set -g "%s"="%s"' % ('ASSET', path_data.replace('\\','/')))
+
+path_data = os.environ['DATA'] 
+hou.hscript('set -g "%s"="%s"' % ('DATA', path_data.replace('\\','/')))
+
+path_data = os.environ['LOCALDATA'] 
+hou.hscript('set -g "%s"="%s"' % ('LOCALDATA', path_data.replace('\\','/')))
+
+path_data = os.environ['CACHE'] 
+hou.hscript('set -g "%s"="%s"' % ('CACHE', path_data.replace('\\','/')))
+
+path_data = os.environ['OUTPUT'] 
+hou.hscript('set -g "%s"="%s"' % ('OUTPUT', path_data.replace('\\','/')))
+
+path_data = os.environ['SRC'] 
+hou.hscript('set -g "%s"="%s"' % ('SRC', path_data.replace('\\','/')))
+
+path_data = os.environ['RENDER'] 
+hou.hscript('set -g "%s"="%s"' % ('RENDER', path_data.replace('\\','/')))
+
+path_data = os.environ['OTL'] 
+hou.hscript('set -g "%s"="%s"' % ('OTL', path_data.replace('\\','/')))
+
+

@@ -1,0 +1,60 @@
+{
+	"envvariables" : 
+	{	
+		"osvariables" :
+		{
+			"Windows" : 
+			[
+				{"CGRU_LOCATION" : "C:/cgru.2.2.2"}
+			],
+			"Linux" :
+			[
+				{"CGRU_LOCATION" : "/opt/cgru.2.2.2"},
+				{"LC_ALL" : "C"},
+				{"LANG" : "en_EN.utf8"}
+			],
+			"Mac" :
+			{}
+		},
+		"cgruvariables" :
+		{
+			"HOUDINI_OTLSCAN_PATH" :
+			[
+				{"path" : 
+					[
+						{"env"  : "CGRU_LOCATION"},
+						{"folders" : ["plugins", "houdini"]}
+					]
+				},
+				
+				{"env" : "OTL"}
+			],
+			"PYTHONPATH" :
+			{
+				"path" : 
+				{
+					"env" : "CGRU_LOCATION",
+					"folders": ["plugins", "houdini"]
+				},
+
+				"path" : 
+				{
+					"env" : "CGRU_LOCATION",
+					"folders": ["lib", "python"]
+				},
+
+				"path" : 
+				{
+					"env" : "CGRU_LOCATION",
+					"folders": ["afanasy", "python"]
+				},
+				
+				"path" : 
+				{
+					"env" : "CGRU_LOCATION",
+					"folders": "lib"
+				}									 
+			}
+		}
+	}
+}
